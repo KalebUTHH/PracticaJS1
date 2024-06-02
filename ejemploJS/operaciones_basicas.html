@@ -3,53 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Operaciones básicas</title>
-</head>
-<body>
-    <h3>Operaciones básicas</h3>
-
-    <input type="number" id="numero1" placeholder="Número 1"> 
-    <input type="number" id="numero2" placeholder="Número 2">
-
-    <button onclick="sumar()">Sumar</button>
-    <button onclick="restar()">Restar</button>
-    <button onclick="multiplicar()">Multiplicar</button>
-    <button onclick="dividir()">Dividir</button>
-
-    <p id="resultado"></p> <!-- Aquí se muestra el resultado -->
-
+    <title>Ejemplo usando Script</title>
     <script>
-        // aquí se definen las variables
-        let numero1, numero2, resultado;
-
-        function sumar() {
-            let numero1 = parseFloat(document.getElementById("numero1").value);
-            let numero2 = parseFloat(document.getElementById("numero2").value);
-            let resultado = numero1 + numero2;
-            document.getElementById("resultado").innerText = "Resultado: " + resultado;
+        
+        function saludo(){
+        document.getElementById("saludo").innerHTML = "HOLA MENOS DIAS :)";
         }
-
-        function restar() {
-            let numero1 = parseFloat(document.getElementById("numero1").value);
-            let numero2 = parseFloat(document.getElementById("numero2").value);
-            let resultado = numero1 - numero2;
-            document.getElementById("resultado").innerText = "Resultado: " + resultado;
-        }  
-
-        function multiplicar() {
-            let numero1 = parseFloat(document.getElementById("numero1").value);
-            let numero2 = parseFloat(document.getElementById("numero2").value);
-            let resultado = numero1 * numero2;
-            document.getElementById("resultado").innerText = "Resultado: " + resultado;
-        }
-
-        function dividir() {
-            let numero1 = parseFloat(document.getElementById("numero1").value);
-            let numero2 = parseFloat(document.getElementById("numero2").value);
-            let resultado = numero1 / numero2;
-            document.getElementById("resultado").innerText = "Resultado: " + resultado;
+        function kaleb(){
+        document.getElementById("kaleb").innerHTML = "llama a kaleb 7713011876";
         }
     </script>
+</head>
+<body>
+    <h1>ejemplo de script</h1>
+    <p class="msj" id="saludo"></p>
+    <p class="msj" id="msj"></p>
+    <p class="msj" id="kaleb"></p>
+  <script>
+    document.getElementById("msj").innerHTML = "mi primer JS";
+  </script>
+  <input type="button" value="Saludar" onclick="saludo()"> 
+
+  <button type="button" id="kaleb" onclick="kaleb()">hola llamaste a kaleb</button>
+
 </body>
 </html>
