@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo usando Script</title>
+    <script>
+        
+        function saludo(){
+        document.getElementById("saludo").innerHTML = "HOLA MENOS DIAS :)";
+        }
+        function kaleb(){
+        document.getElementById("kaleb").innerHTML = "llama a kaleb 7713011876";
+        }
+    </script>
+</head>
+<body>
+    <h1>ejemplo de script</h1>
+    <p class="msj" id="saludo"></p>
+    <p class="msj" id="msj"></p>
+    <p class="msj" id="kaleb"></p>
+  <script>
+    document.getElementById("msj").innerHTML = "mi primer JS";
+  </script>
+  <input type="button" value="Saludar" onclick="saludo()"> 
+
+  <button type="button" id="kaleb" onclick="kaleb()">hola llamaste a kaleb</button>
+
+</body>
+</html>
